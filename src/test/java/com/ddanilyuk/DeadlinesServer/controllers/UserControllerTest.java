@@ -52,9 +52,9 @@ public class UserControllerTest  {
     @Test
     public void getRegistrationTest() throws Exception {
         Map<String, String> states = new HashMap<String, String>();
-        states.put("userFirstName", "Denis");
-        states.put("userSecondName", "Danil");
-        states.put("username", "dd");
+        states.put("userFirstName", "Yevhenii");
+        states.put("userSecondName", "Krasulin");
+        states.put("username", "vasya pupkin");
         states.put("password", "12345");
         this.mockMvc.perform( MockMvcRequestBuilders
                 .post("/registration")
@@ -67,7 +67,7 @@ public class UserControllerTest  {
     @Test
     public void getLoginTest() throws Exception {
         Map<String, String> states = new HashMap<String, String>();
-        states.put("username", "dd");
+        states.put("username", "vasya pupkin");
         states.put("password", "12345");
         this.mockMvc.perform( MockMvcRequestBuilders
                 .post("/login")
